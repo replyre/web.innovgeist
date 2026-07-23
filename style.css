@@ -527,7 +527,14 @@ section { position: relative; padding: 96px 0; }
   margin: 8px 0 4px;
   line-height: 1;
 }
-.package-price sup { font-size: 1.2rem; color: var(--stone-400); font-family: var(--font-sans); font-weight: 600; }
+.package-price sup {
+  font-size: 1.1rem;
+  vertical-align: baseline;   /* sit on the baseline, not raised/floating */
+  color: var(--stone-400);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0;
+}
 
 .package-tagline {
   color: var(--stone-400);
@@ -1015,6 +1022,15 @@ section { position: relative; padding: 96px 0; }
 }
 .case-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
+/* Opposite-side text alignment: image left → text right-aligned;
+   flipped rows (image right) keep default left alignment */
+.case:not(.case-flip) .case-body { text-align: right; }
+.case:not(.case-flip) .case-highlights li { flex-direction: row-reverse; text-align: right; }
+@media (max-width: 860px) {
+  .case:not(.case-flip) .case-body { text-align: left; }
+  .case:not(.case-flip) .case-highlights li { flex-direction: row; text-align: left; }
+}
+
 /* Row-wise complete shots — each website screenshot shown in full, no cropping */
 .case-shots { display: flex; flex-direction: column; gap: 14px; }
 .shot {
@@ -1097,10 +1113,14 @@ section { position: relative; padding: 96px 0; }
 }
 .m-label { font-size: 0.82rem; color: var(--stone-400); line-height: 1.45; }
 
-/* Mobile: logo + stack stay a top pair; number tiles go full-width so labels don't cram */
+/* Mobile: logo + stack stay a top pair; number tiles go full-width.
+   Icon and text sit at opposite ends so each tile reads balanced:
+   icon left → text right-aligned; icon right → text left-aligned. */
 @media (max-width: 560px) {
-  .kull-bento .kb-metric { grid-column: 1 / -1; }
-  .kb-metric .m-num { font-size: 2rem; }
+  .kull-bento .kb-metric { grid-column: 1 / -1; justify-content: space-between; }
+  .kull-bento .kb-metric .m-num { font-size: 2rem; }
+  .kull-bento .kb-metric .m-text { text-align: right; }   /* icon on left */
+  .kull-bento .kb-metric-r .m-text { text-align: left; }  /* icon on right */
 }
 .bt-brand {
   display: flex;
