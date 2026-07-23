@@ -188,3 +188,30 @@ if (captureForm) {
     }
   });
 }
+
+/* ── Offer popup modal ── */
+const offerModal = document.getElementById("offerModal");
+if (offerModal) {
+  const openModal = () => {
+    offerModal.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+  };
+  const closeModal = () => {
+    offerModal.classList.remove("is-open");
+    document.body.style.overflow = "";
+    try { sessionStorage.setItem("ig-offer-seen", "1"); } catch (e) {}
+  };
+  document.getElementById("offerClose").addEventListener("click", closeModal);
+  offerModal.addEventListener("click", (e) => { if (e.target === offerModal) closeModal(); });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && offerModal.classList.contains("is-open")) closeModal();
+  });
+  // CTA clicks count as engagement — close the modal behind them
+  offerModal.querySelectorAll(".modal-cta").forEach((a) =>
+    a.addEventListener("click", closeModal)
+  );
+  // show once per browsing session, shortly after load
+  let seen = false;
+  try { seen = sessionStorage.getItem("ig-offer-seen") === "1"; } catch (e) {}
+  if (!seen) setTimeout(openModal, 1400);
+}
