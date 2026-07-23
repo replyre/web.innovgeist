@@ -1096,6 +1096,12 @@ section { position: relative; padding: 96px 0; }
   color: var(--ember);
 }
 .m-label { font-size: 0.82rem; color: var(--stone-400); line-height: 1.45; }
+
+/* Mobile: logo + stack stay a top pair; number tiles go full-width so labels don't cram */
+@media (max-width: 560px) {
+  .kull-bento .kb-metric { grid-column: 1 / -1; }
+  .kb-metric .m-num { font-size: 2rem; }
+}
 .bt-brand {
   display: flex;
   flex-direction: column;
