@@ -522,18 +522,19 @@ section { position: relative; padding: 96px 0; }
 .package-price {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 2.6rem;
+  font-size: clamp(1.7rem, 2.3vw, 2.2rem);
   letter-spacing: -0.02em;
   margin: 8px 0 4px;
-  line-height: 1;
+  line-height: 1.05;
+  white-space: nowrap;        /* keep the full range on one line */
 }
 .package-price sup {
-  font-size: 1.1rem;
-  vertical-align: baseline;   /* sit on the baseline, not raised/floating */
-  color: var(--stone-400);
-  font-family: var(--font-sans);
-  font-weight: 600;
-  letter-spacing: 0;
+  font-size: 1em;             /* same size as the main price */
+  vertical-align: baseline;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--stone-400);    /* same size, slightly muted to keep the from–to read */
 }
 
 .package-tagline {
@@ -804,6 +805,9 @@ section { position: relative; padding: 96px 0; }
   transition: border-color 0.25s ease, background-color 0.25s ease;
 }
 .tech-item:hover { border-color: rgba(245,158,11,0.5); background: var(--surface-2); }
+/* light mode: --surface-2 stays dark (for icon chips), so give hovers a light bg here */
+:root[data-theme="light"] .tech-item:hover,
+:root[data-theme="light"] .stat-cell:hover { background: #E6DBCF; }
 .tech-item img { height: 28px; width: auto; max-width: 48px; object-fit: contain; flex-shrink: 0; }
 .tech-item span {
   font-family: var(--font-display);
