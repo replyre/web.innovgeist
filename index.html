@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Innovgeist — Ahead Of Its Time | Custom Websites, AI & Shopify</title>
+<meta name="description" content="Innovgeist builds custom websites, applications, AI solutions and Shopify Plus stores for fast-growing brands. Founded 2024. 25+ builds, 20+ clients across India, US & UAE. End-to-end, start to scale." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#home" class="brand">
+      <img src="assets/logo.png" alt="Innovgeist" />
+      INNOVGEIST
+    </a>
+
+    <div class="nav-links">
+      <a href="#about">Company</a>
+      <a href="#work">Work</a>
+      <a href="#packages">Packages</a>
+      <a href="#automation">Automation</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
+        <span class="knob"></span>
+      </button>
+      <a href="#contact" class="btn btn-primary desktop-only">Start A Project</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">Company</a>
+  <a href="#work">Work</a>
+  <a href="#packages">Packages</a>
+  <a href="#automation">Automation</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact" class="btn btn-primary" style="width:fit-content">Start A Project</a>
+</div>
+
+<!-- ═══ HERO — full screen, company-first, card as backdrop ═══ -->
+<header class="hero grid-bg" id="home">
+
+  <!-- Card sits BEHIND the heading as an ambient centerpiece -->
+  <div class="hero-card-bg" aria-hidden="true">
+    <div class="hero-glow"></div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-face flip-front">
+          <img src="assets/image.png" alt="" class="card-face-img" />
+        </div>
+        <div class="flip-face flip-back">
+          <svg viewBox="0 0 220 320" preserveAspectRatio="xMidYMid slice" class="back-pattern">
+            <defs>
+              <pattern id="diamondLattice" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <rect width="28" height="28" fill="none"/>
+                <path d="M14 2L26 14L14 26L2 14Z" fill="none" stroke="#F59E0B" stroke-width="1" opacity="0.35"/>
+                <circle cx="14" cy="14" r="1.4" fill="#F59E0B" opacity="0.5"/>
+              </pattern>
+            </defs>
+            <rect x="1" y="1" width="218" height="318" rx="14" fill="#161412"/>
+            <rect x="10" y="10" width="200" height="300" rx="8" fill="url(#diamondLattice)"/>
+            <rect x="10" y="10" width="200" height="300" rx="8" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.5"/>
+          </svg>
+          <img src="assets/logo.png" alt="" class="back-logo" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Foreground content, centered -->
+  <div class="hero-inner">
+    <p class="hero-accent">Ahead of its time</p>
+
+    <h1 class="hero-headline">We build for the ones<br>who dare to grow.</h1>
+
+    <p class="hero-lede">A team of designers, engineers and AI experts crafting seamless digital experiences for fast-growing brands — and we stay with them as they scale.</p>
+
+    <div class="hero-cta-row">
+      <a href="#work" class="btn btn-primary">See Our Work</a>
+      <a href="https://wa.me/919305602733" target="_blank" rel="noopener" class="btn btn-outline">Chat on WhatsApp</a>
+    </div>
+  </div>
+
+  <a href="#about" class="hero-scroll" aria-label="Scroll down">
+    <span>Scroll</span>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</header>
+
+<!-- ═══ TECHNOLOGY — two-row logo marquee ═══ -->
+<section id="tech" class="grid-bg tech-section">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="mono-label">Technology</span>
+      <div class="wipe-heading"><h2>Built On A Modern Stack</h2><span class="wipe-overlay"></span></div>
+    </div>
+  </div>
+
+  <!-- Row 1 — scrolls left -->
+  <div class="marquee tech-marquee reveal">
+    <div class="marquee-track tech-track-a marquee-slow">
+      <div class="tech-item"><img src="assets/tech/react.svg" alt="React" /><span>React</span></div>
+      <div class="tech-item"><img src="assets/tech/nextjs.svg" alt="Next.js" /><span>Next.js</span></div>
+      <div class="tech-item"><img src="assets/tech/nodejs.svg" alt="Node.js" /><span>Node.js</span></div>
+      <div class="tech-item"><img src="assets/tech/python.svg" alt="Python" /><span>Python</span></div>
+      <div class="tech-item"><img src="assets/tech/typescript.svg" alt="TypeScript" /><span>TypeScript</span></div>
+      <div class="tech-item"><img src="assets/tech/graphql.svg" alt="GraphQL" /><span>GraphQL</span></div>
+      <div class="tech-item"><img src="assets/tech/mongodb.svg" alt="MongoDB" /><span>MongoDB</span></div>
+      <!-- duplicate for seamless loop -->
+      <div class="tech-item" aria-hidden="true"><img src="assets/tech/react.svg" alt="" /><span>React</span></div>
+      <div class="tech-item" aria-hidden="true"><img src="assets/tech/nextjs.svg" alt="" /><span>Next.js</span></div>
+      <div class="tech-item" aria-hidden="true"><img src="assets/tech/nodejs.svg" alt="" /><span>Node.js</span></div>
+      <div class="tech-item" aria-hidden="true"><img src="assets/tech/python.svg" alt="" /><span>Python</span></div>
+      <div class="tech-item" aria-hidden="true"><img src="assets/tech/typescript.svg" alt="" /><span>TypeScript</span></div>
+      <div class="tech-item" aria-hidden="true"><img src="assets/tech/graphql.svg" alt="" /><span>GraphQL</span></div>
+      <div class="tech-item" aria-hidden="true"><img src="assets/tech/mongodb.svg" alt="" /><span>MongoDB</span></div>
+    </div>
+  </div>
+
+  <!-- Row 2 — scrolls right -->
+  <div class="marquee tech-marquee reveal">
+    <div class="marquee-track tech-track-b marquee-slow marquee-reverse">
+      <div class="tech-item"><img src="assets/tech/aws.svg" alt="AWS" /><span>AWS</span></div>
+      <div class="tech-item"><img src="assets/tech/shopify.svg" alt="Shopify Plus" /><span>Shopify Plus</span></div>
+      <div class="tech-item"><img src="assets/tech/firebase.svg" alt="Firebase" /><span>Firebase</span></div>
+      <div class="tech-item"><img src="assets/tech/react.svg" alt="React Native" /><span>React Native</span></div>
+      <div class="tech-item"><img src="assets/tech/ios.svg" alt="iOS" /><span>iOS</span></div>
+      <div class="tech-item"><img src="assets/tech/android.svg" alt="Android" /><span>Android</span></div>
+      <div class="tech-item"><img src="assets/tech/wordpress.svg" alt="WordPress" /><span>WordPress</span></div>
+      <div class="tech-item"><img src="assets/tech/openai.svg" alt="Gen-AI" /><span>Gen-AI</span></div>
+      <!-- duplicate for seamless loop -->
+      <div class="tech-item" aria-hidden="true"><img src="assets/tech/aws.svg" alt="" /><span>AWS</span></div>
+      <div class="tech-item" aria-hidden="true"><img src="assets/tech/shopify.svg" alt="" /><span>Shopify Plus</span></div>
+      <div class="tech-item" aria-hidden="true"><img src="assets/tech/firebase.svg" alt="" /><span>Firebase</span></div>
+      <div class="tech-item" aria-hidden="true"><img src="assets/tech/react.svg" alt="" /><span>React Native</span></div>
+      <div class="tech-item" aria-hidden="true"><img src="assets/tech/ios.svg" alt="" /><span>iOS</span></div>
+      <div class="tech-item" aria-hidden="true"><img src="assets/tech/android.svg" alt="" /><span>Android</span></div>
+      <div class="tech-item" aria-hidden="true"><img src="assets/tech/wordpress.svg" alt="" /><span>WordPress</span></div>
+      <div class="tech-item" aria-hidden="true"><img src="assets/tech/openai.svg" alt="" /><span>Gen-AI</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT US ═══ -->
+<section id="about" class="grid-bg">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <span class="mono-label">About Us</span>
+        <div class="wipe-heading"><h2>Driven By Data.<br>Fueled By Design.<br>Built To Scale.</h2><span class="wipe-overlay"></span></div>
+        <p class="about-intro">Founded in 2024, Innovgeist is a team of UX designers, full-stack developers, automation engineers, AI experts, solution architects and marketers — crafting seamless experiences for fast-growing brands across three continents.</p>
+        <p>We're not a template shop. Innovgeist ships full production systems — <strong>custom AI &amp; automation, Shopify Plus commerce, web &amp; mobile apps, and bespoke applications</strong> — for brands in beauty, wellness, fashion, tech and SaaS.</p>
+        <p>You work directly with the people building your product — <strong>no account managers relaying messages</strong>, no call-center hand-offs. Automation is built into how we work from day one, which is why we move fast without cutting corners.</p>
+        <div class="direct-access-card">
+          <p><strong style="color:var(--ember)">Custom AI + Automation · Shopify Plus · Web &amp; Mobile · Custom Applications.</strong> Four core offerings, one team that owns the outcome end to end.</p>
+        </div>
+      </div>
+
+      <div class="about-right reveal">
+        <div class="brand-panel">
+          <svg class="brand-panel-bg" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <pattern id="aboutLattice" width="26" height="26" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <path d="M13 2L24 13L13 24L2 13Z" fill="none" stroke="#F59E0B" stroke-width="1" opacity="0.28"/>
+                <circle cx="13" cy="13" r="1.3" fill="#F59E0B" opacity="0.4"/>
+              </pattern>
+            </defs>
+            <rect width="400" height="200" fill="url(#aboutLattice)"/>
+          </svg>
+          <img src="assets/logo.png" alt="Innovgeist" class="brand-panel-logo" />
+          <span class="brand-panel-word">INNOVGEIST</span>
+          <span class="brand-panel-cap">Est. 2024 &middot; India &middot; US &middot; UAE</span>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-cell"><span class="stat-num">30<sup>+</sup></span><span class="stat-label">Intelligent flows automated</span></div>
+          <div class="stat-cell"><span class="stat-num">25<sup>+</sup></span><span class="stat-label">Custom websites &amp; Shopify builds</span></div>
+          <div class="stat-cell"><span class="stat-num">20<sup>+</sup></span><span class="stat-label">Clients across India, US &amp; UAE</span></div>
+          <div class="stat-cell"><span class="stat-num">10<sup>+</sup></span><span class="stat-label">UI/UX experts &amp; AI engineers</span></div>
+          <div class="stat-cell"><span class="stat-num">5<sup>+</sup></span><span class="stat-label">Industries served</span></div>
+          <div class="stat-cell"><span class="stat-num">5</span><span class="stat-label">Global locations</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ END-TO-END PROCESS ═══ -->
+<section id="process" class="grid-bg">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="mono-label">How We Work</span>
+      <div class="wipe-heading"><h2>End To End. Start To Scale.</h2><span class="wipe-overlay"></span></div>
+      <p>One team owns the whole journey — from the first wireframe to the integrations, the dashboards, and the ongoing support long after launch. Nothing gets thrown over a wall.</p>
+    </div>
+
+    <div class="process-track reveal">
+      <div class="process-step">
+        <span class="step-index">01</span>
+        <h4>Custom UI/UX</h4>
+        <p>Research-led design tailored to your brand and your customers — not a theme with your logo dropped in.</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <span class="step-index">02</span>
+        <h4>Website &amp; Store Setup</h4>
+        <p>Web, mobile or Shopify Plus commerce — built for speed, credibility and conversion from day one.</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <span class="step-index">03</span>
+        <h4>Custom Integrations</h4>
+        <p>Payments, inquiry &amp; contract systems, APIs and omni-channel connections wired into one system.</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <span class="step-index">04</span>
+        <h4>Admin &amp; Automation</h4>
+        <p>Admin dashboards and automated flows so your team runs the business without touching code.</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <span class="step-index">05</span>
+        <h4>SEO &amp; Performance</h4>
+        <p>On-page SEO, Core Web Vitals and analytics/pixel setup so you get found and stay fast.</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <span class="step-index">06</span>
+        <h4>Dedicated Support</h4>
+        <p>Ongoing maintenance and a direct line to the team that built it. We stay as you scale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WHAT SUCCESS LOOKS LIKE — case studies ═══ -->
+<section id="work" class="grid-bg">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="mono-label">What Success Looks Like</span>
+      <div class="wipe-heading"><h2>Driven By Strategy.<br>Delivered By Innovgeist.</h2><span class="wipe-overlay"></span></div>
+      <p>Three brands, three very different problems — all taken from idea to a live, working system by the same team.</p>
+    </div>
+
+    <!-- Case 1 — Juhi Choksi (complete shots, row-wise) -->
+    <article class="case reveal">
+      <div class="case-shots">
+        <div class="shot"><img src="assets/deck/juhi-store.png" alt="Juhi Choksi storefront" loading="lazy" /></div>
+        <div class="shot"><img src="assets/deck/juhi-craft.png" alt="Juhi Choksi craftsmanship section" loading="lazy" /></div>
+      </div>
+      <div class="case-body">
+        <span class="case-tag">Fashion &amp; Apparel · Shopify Plus</span>
+        <h3>Juhi Choksi</h3>
+        <p class="case-lede">Empowering local stores with speed &amp; simplicity.</p>
+        <p>A premium fashion label with 4 offline stores in Gujarat was ready to step into digital retail — but faced roadblocks around Shopify setup and payment-gateway integration. We brought them fully online with a seamless, mobile-first experience — offline to eCommerce-ready in record time.</p>
+        <ul class="case-highlights">
+          <li>4 retail stores taken online</li>
+          <li>60+ product listings</li>
+          <li>100% Shopify + payment integration</li>
+          <li>Seamless mobile experience</li>
+        </ul>
+        <a class="case-link" href="https://juhichoksi.in/" target="_blank" rel="noopener">Visit juhichoksi.in →</a>
+      </div>
+    </article>
+
+    <!-- Case 2 — Space.Labs (complete shots, row-wise) -->
+    <article class="case case-flip reveal">
+      <div class="case-shots">
+        <div class="shot"><img src="assets/deck/spacelabs-hero.png" alt="Space Labs website hero" loading="lazy" /></div>
+        <div class="shot"><img src="assets/deck/spacelabs-life.png" alt="Life at Space Labs section" loading="lazy" /></div>
+        <div class="shot"><img src="assets/deck/spacelabs-founder.png" alt="Space Labs founder note" loading="lazy" /></div>
+      </div>
+      <div class="case-body">
+        <span class="case-tag">Tech · Custom Website · Lead Gen</span>
+        <h3>Space.Labs</h3>
+        <p class="case-lede">A digital-first presence for a global business vision.</p>
+        <p>Space Labs works with international clients and needed a site that would professionally showcase its products and generate online leads. The goal wasn't just to go online — it was to stand out with a clean, conversion-focused experience built for global trust.</p>
+        <ul class="case-highlights">
+          <li>Fully custom development</li>
+          <li>100% lead-gen optimized</li>
+          <li>B2B funnel &amp; forms</li>
+          <li>Cross-browser, mobile-first UX</li>
+        </ul>
+        <a class="case-link" href="https://www.space-labs.in/" target="_blank" rel="noopener">Visit space-labs.in →</a>
+      </div>
+    </article>
+
+    <!-- Case 3 — Kull (infographic, row-wise) -->
+    <article class="case reveal">
+      <div class="kull-bento">
+        <!-- large logo square -->
+        <div class="kb kb-logo">
+          <img src="assets/clients/kull.png" alt="Kull" />
+        </div>
+        <!-- stack squares -->
+        <div class="kb kb-stack">
+          <div class="stack-icons">
+            <span class="si"><img src="assets/tech/aws.svg" alt="AWS" /></span>
+            <span class="si"><img src="assets/tech/nodejs.svg" alt="Node.js" /></span>
+            <span class="si"><img src="assets/tech/python.svg" alt="Python" /></span>
+            <span class="si"><img src="assets/tech/mongodb.svg" alt="MongoDB" /></span>
+            <span class="si"><img src="assets/tech/firebase.svg" alt="Firebase" /></span>
+            <span class="si"><img src="assets/tech/android.svg" alt="Android" /></span>
+            <span class="si"><img src="assets/tech/n8n.svg" alt="n8n" /></span>
+            <span class="si"><img src="assets/tech/appsscript.svg" alt="Google Apps Script" /></span>
+            <span class="si"><img src="assets/tech/claude.svg" alt="Claude" /></span>
+          </div>
+        </div>
+        <!-- number rect — icon left -->
+        <div class="kb kb-metric">
+          <span class="si si-lg"><img src="assets/tech/aws.svg" alt="" /></span>
+          <div class="m-text">
+            <span class="m-num">↓ 40%</span>
+            <span class="m-label">Cloud billing, first month post-migration</span>
+          </div>
+        </div>
+        <!-- number rect — icon right -->
+        <div class="kb kb-metric kb-metric-r">
+          <div class="m-text">
+            <span class="m-num">5 → 1</span>
+            <span class="m-label">Five vendors into one AWS architecture</span>
+          </div>
+          <span class="si si-lg"><img src="assets/tech/mongodb.svg" alt="" /></span>
+        </div>
+      </div>
+      <div class="case-body">
+        <span class="case-tag">Cloud Infrastructure · AWS Consolidation</span>
+        <h3>Kull</h3>
+        <p class="case-lede">Five vendors, one architecture — zero downtime.</p>
+        <p>Kull's stack had sprawled across five vendors — separate hosting, a VPS backend, Cloudinary for media and an extra CDN — five invoices and three deploy pipelines. We mapped every request path and billing line, then migrated the whole stack into a single AWS architecture while live traffic never noticed the move happening underneath it.</p>
+        <ul class="case-highlights">
+          <li>5 vendors → 1 AWS architecture</li>
+          <li>Cloud billing down 40%</li>
+          <li>Zero-downtime migration</li>
+          <li>One console, one bill, one pipeline</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ═══ TRUSTED BRANDS — single-line logo marquee ═══ -->
+<section id="brands" class="grid-bg brands-band">
+  <div class="container">
+    <p class="brands-label reveal">Our Trusted Brand Collaborations</p>
+  </div>
+  <div class="marquee brand-marquee reveal">
+    <div class="marquee-track marquee-slow">
+      <div class="brand-chip"><img src="assets/clients/spacelabs.png" alt="Space.Labs" /></div>
+      <div class="brand-chip"><img src="assets/clients/sicksyx.png" alt="SickSyx" /></div>
+      <div class="brand-chip"><img src="assets/clients/kull.png" alt="Kull" /></div>
+      <div class="brand-chip"><img src="assets/clients/juhichoksi.png" alt="Juhi Choksi" /></div>
+      <div class="brand-chip"><img src="assets/clients/gradeguru.png" alt="GradeGuru" /></div>
+      <div class="brand-chip"><img src="assets/clients/scholaraxis.png" alt="Scholaraxis" /></div>
+      <div class="brand-chip"><img src="assets/clients/entrybridge.png" alt="EntryBridge" /></div>
+      <div class="brand-chip"><img src="assets/clients/houseofpehr.webp" alt="House of Pehr" /></div>
+      <div class="brand-chip"><img src="assets/clients/digidukaan.png" alt="DigiDukaan" /></div>
+      <!-- duplicate for seamless loop -->
+      <div class="brand-chip" aria-hidden="true"><img src="assets/clients/spacelabs.png" alt="" /></div>
+      <div class="brand-chip" aria-hidden="true"><img src="assets/clients/sicksyx.png" alt="" /></div>
+      <div class="brand-chip" aria-hidden="true"><img src="assets/clients/kull.png" alt="" /></div>
+      <div class="brand-chip" aria-hidden="true"><img src="assets/clients/juhichoksi.png" alt="" /></div>
+      <div class="brand-chip" aria-hidden="true"><img src="assets/clients/gradeguru.png" alt="" /></div>
+      <div class="brand-chip" aria-hidden="true"><img src="assets/clients/scholaraxis.png" alt="" /></div>
+      <div class="brand-chip" aria-hidden="true"><img src="assets/clients/entrybridge.png" alt="" /></div>
+      <div class="brand-chip" aria-hidden="true"><img src="assets/clients/houseofpehr.webp" alt="" /></div>
+      <div class="brand-chip" aria-hidden="true"><img src="assets/clients/digidukaan.png" alt="" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PACKAGES ═══ -->
+<section id="packages" class="grid-bg">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="mono-label">Website Packages</span>
+      <div class="wipe-heading"><h2>Get Online, Productized.</h2><span class="wipe-overlay"></span></div>
+      <p>Not every brand needs a full custom build to start. These are our fixed-price website packages — the fastest way onto Google. Every tier includes a free domain (.com/.in) and free hosting for Year 1. No hidden charges.</p>
+    </div>
+
+    <div class="packages-grid">
+      <!-- STARTER -->
+      <div class="package-card is-highlight reveal">
+        <span class="badge-offer">🔥 Best Offer</span>
+        <span class="package-name">Starter</span>
+        <div class="package-price">₹4,000</div>
+        <p class="package-tagline">Get your business online this week — the lowest-cost way to stop losing customers to competitors who already show up on Google.</p>
+        <ul class="package-features">
+          <li><span class="tick">✓</span> Single page, 5 sections</li>
+          <li><span class="tick">✓</span> Footer + social links integrated</li>
+          <li><span class="tick">✓</span> Basic on-page SEO</li>
+          <li><span class="tick">✓</span> Free domain + hosting, Year 1</li>
+          <li><span class="tick">✓</span> Delivery: 3–4 days</li>
+        </ul>
+        <a class="package-example" href="https://shieldwear-website.vercel.app/" target="_blank" rel="noopener">See a live example →</a>
+        <a href="#contact" class="btn btn-primary" style="justify-content:center">Start With Starter</a>
+      </div>
+
+      <!-- GROWTH -->
+      <div class="package-card reveal">
+        <span class="package-name">Growth</span>
+        <div class="package-price">₹8,000<sup>–12,000</sup></div>
+        <p class="package-tagline">A premium single-page site with more room to make the case — for businesses ready to look established, not just "online."</p>
+        <ul class="package-features">
+          <li><span class="tick">✓</span> Single page, premium design</li>
+          <li><span class="tick">✓</span> 8–10 sections</li>
+          <li><span class="tick">✓</span> Everything in Starter</li>
+          <li><span class="tick">✓</span> Free domain + hosting, Year 1</li>
+        </ul>
+        <a class="package-example" href="https://www.madie.es/" target="_blank" rel="noopener">See a live example →</a>
+        <a href="#contact" class="btn btn-outline" style="justify-content:center">Go With Growth</a>
+      </div>
+
+      <!-- PRO -->
+      <div class="package-card reveal">
+        <span class="package-name">Pro</span>
+        <div class="package-price">₹20,000<sup>–25,000</sup></div>
+        <p class="package-tagline">A multi-page website with automation wired in — for businesses ready to look established and capture leads on autopilot.</p>
+        <ul class="package-features">
+          <li><span class="tick">✓</span> Up to 5-page website</li>
+          <li><span class="tick">✓</span> Lead-capture automation built in</li>
+          <li><span class="tick">✓</span> Google Business Profile setup</li>
+          <li><span class="tick">✓</span> Multi-page on-page SEO</li>
+          <li><span class="tick">✓</span> Everything in Growth</li>
+        </ul>
+        <a class="package-example" href="https://juhichoksi.in/" target="_blank" rel="noopener">See Juhi Choksi, live →</a>
+        <a href="#contact" class="btn btn-outline" style="justify-content:center">Go Pro</a>
+      </div>
+    </div>
+
+    <!-- PREMIUM — full-width tier below the three cards -->
+    <div class="premium-card reveal">
+      <span class="premium-ribbon">Premium</span>
+      <div class="premium-left">
+        <span class="package-name">Premium</span>
+        <div class="package-price">₹50,000<sup>+</sup></div>
+        <p class="premium-tagline">The full custom build — everything done properly. Animation, a real content engine, and automation working together, for brands that want to lead their category online.</p>
+        <a class="package-example" href="https://www.space-labs.in/" target="_blank" rel="noopener">See Space.Labs, live →</a>
+        <a href="#contact" class="btn btn-primary" style="justify-content:center; width:fit-content">Talk To Us About Premium</a>
+      </div>
+      <ul class="premium-features">
+        <li><span class="tick">✓</span> Custom animations &amp; interactions</li>
+        <li><span class="tick">✓</span> Complete blog + ongoing SEO engine</li>
+        <li><span class="tick">✓</span> Advanced automation &amp; AI integrations</li>
+        <li><span class="tick">✓</span> 10+ pages / fully custom pages</li>
+        <li><span class="tick">✓</span> Custom dashboards &amp; app features</li>
+        <li><span class="tick">✓</span> Priority support &amp; maintenance</li>
+        <li><span class="tick">✓</span> Everything in Pro</li>
+      </ul>
+    </div>
+
+    <p class="price-note">*Final price may vary slightly based on pages/content needed for your business — confirmed on a quick call before we start. Need something bigger — an app, AI or Shopify Plus build? <a href="#contact" style="color:var(--ember)">Talk to us.</a></p>
+  </div>
+</section>
+
+<!-- ═══ AI & AUTOMATION ═══ -->
+<section id="automation" class="grid-bg">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="mono-label">AI &amp; Automation</span>
+      <div class="wipe-heading"><h2>Systems That Run Themselves.</h2><span class="wipe-overlay"></span></div>
+      <p>A website is only half the system. We wire the invisible half — capture, campaigns, chat and quoting — so the work happens automatically. These are the kinds of flows we build for clients. Want them for your business? Tell us on the right.</p>
+    </div>
+
+    <div class="auto-grid">
+      <!-- LEFT: automation examples (from the deck + bigger flows) -->
+      <div class="auto-list reveal">
+        <div class="auto-card">
+          <div class="auto-card-head">
+            <h3>Lead Capture &amp; Routing</h3>
+          </div>
+          <p>Form submissions formatted into a clean record and pushed to your inbox, sheet or WhatsApp in seconds — so no lead ever sits in a form nobody checks.</p>
+          <div class="auto-flow">
+            <span class="fic"><img src="assets/tech/n8n.svg" alt="n8n" /></span>
+            <span class="fic"><img src="assets/tech/appsscript.svg" alt="Apps Script" /></span>
+            <span class="fic"><img src="assets/tech/sheets.svg" alt="Google Sheets" /></span>
+            <span class="fic"><img src="assets/tech/gmail.svg" alt="Email" /></span>
+            <span class="fic"><img src="assets/tech/whatsapp.svg" alt="WhatsApp" /></span>
+          </div>
+        </div>
+
+        <div class="auto-card">
+          <div class="auto-card-head"><h3>Marketing Automation at Scale</h3></div>
+          <p>WhatsApp, SMS and email campaigns that trigger on behaviour — powered by Gupshup, CleverTap, Kaleyra and SendGrid, wired straight into your store or app.</p>
+          <div class="auto-flow">
+            <span class="fic"><img src="assets/tech/whatsapp.svg" alt="WhatsApp" /></span>
+            <span class="fic"><img src="assets/tech/gmail.svg" alt="Email" /></span>
+            <span class="fic"><img src="assets/tech/n8n.svg" alt="n8n" /></span>
+            <span class="fic"><img src="assets/tech/zapier.svg" alt="Zapier" /></span>
+          </div>
+        </div>
+
+        <div class="auto-card">
+          <div class="auto-card-head"><h3>Conversational AI &amp; Personalization</h3></div>
+          <p>Gen-AI assistants and chat (KwikChat / LimeChat style) that answer, qualify and personalise 24/7 — trained on your own content and catalog.</p>
+          <div class="auto-flow">
+            <span class="fic"><img src="assets/tech/claude.svg" alt="Claude / Gen-AI" /></span>
+            <span class="fic"><img src="assets/tech/whatsapp.svg" alt="WhatsApp" /></span>
+            <span class="fic"><img src="assets/tech/firebase.svg" alt="Firebase" /></span>
+          </div>
+        </div>
+
+        <div class="auto-card">
+          <div class="auto-card-head"><h3>Instant Quotations &amp; Proposals</h3></div>
+          <p>A lead describes what they need and an itemized quote is drafted by AI, logged to a sheet and emailed automatically — out the door while the interest is warm.</p>
+          <div class="auto-flow">
+            <span class="fic"><img src="assets/tech/claude.svg" alt="Claude" /></span>
+            <span class="fic"><img src="assets/tech/appsscript.svg" alt="Apps Script" /></span>
+            <span class="fic"><img src="assets/tech/sheets.svg" alt="Google Sheets" /></span>
+            <span class="fic"><img src="assets/tech/gmail.svg" alt="Email" /></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: a live capture form visitors can actually use -->
+      <div class="auto-form-wrap reveal">
+        <form class="auto-form" id="captureForm">
+          <span class="auto-tag">Get started</span>
+          <h3>Tell us what you need</h3>
+          <p class="auto-form-sub">Drop your details and we'll get back to you — usually within a few hours. Prefer to chat? WhatsApp us anytime.</p>
+
+          <div class="form-field">
+            <label for="cName">Your Name</label>
+            <input type="text" id="cName" name="name" required placeholder="Full name" />
+          </div>
+          <div class="form-field">
+            <label for="cEmail">Email</label>
+            <input type="email" id="cEmail" name="email" required placeholder="you@business.com" />
+          </div>
+          <div class="form-field">
+            <label for="cPhone">Phone / WhatsApp</label>
+            <input type="tel" id="cPhone" name="phone" required placeholder="+91 XXXXX XXXXX" />
+          </div>
+          <div class="form-field">
+            <label for="cBusiness">Business</label>
+            <input type="text" id="cBusiness" name="business" placeholder="Your business (optional)" />
+          </div>
+          <div class="form-field">
+            <label for="cNeed">What do you need?</label>
+            <select id="cNeed" name="need">
+              <option value="Website">A website</option>
+              <option value="Shopify / E-commerce">Shopify / e-commerce</option>
+              <option value="AI / Automation">AI / automation</option>
+              <option value="Custom app">Custom app or platform</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center" id="captureBtn">Send My Details</button>
+          <p class="form-status" id="captureStatus"></p>
+        </form>
+
+        <!-- success state -->
+        <div class="capture-done" id="captureDone" hidden>
+          <div class="capture-check">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Got it ✓</h3>
+          <p class="auto-form-sub">Thanks — here's what we received:</p>
+          <dl class="capture-record" id="captureRecord"></dl>
+          <p class="capture-note">We'll be in touch shortly. For a faster reply, WhatsApp us anytime at +91-9305602733.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SHOWCASE — browser-framed screenshot grid ═══ -->
+<section id="showcase" class="grid-bg">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="mono-label">Proof</span>
+      <div class="wipe-heading"><h2>Live Sites We've Shipped</h2><span class="wipe-overlay"></span></div>
+      <p>Real sites, live on the web. Hover to preview the page — click any card to open it.</p>
+    </div>
+
+    <div class="showcase-grid">
+      <a class="site-card reveal" href="https://shieldwear-website.vercel.app/" target="_blank" rel="noopener">
+        <div class="site-bar"><span></span><span></span><span></span><em>shieldwear-website.vercel.app</em></div>
+        <div class="site-shot"><img src="assets/showcase/shieldwear.png" alt="ShieldWear website" loading="lazy" /></div>
+        <div class="site-meta">
+          <div><span class="tier-tag">Starter · ₹4,000</span><h3>ShieldWear</h3></div>
+          <span class="site-visit">Visit →</span>
+        </div>
+      </a>
+
+      <a class="site-card reveal" href="https://www.madie.es/" target="_blank" rel="noopener">
+        <div class="site-bar"><span></span><span></span><span></span><em>madie.es</em></div>
+        <div class="site-shot"><img src="assets/showcase/madie.png" alt="Madie website" loading="lazy" /></div>
+        <div class="site-meta">
+          <div><span class="tier-tag">Growth · ₹8,000–12,000</span><h3>Madie</h3></div>
+          <span class="site-visit">Visit →</span>
+        </div>
+      </a>
+
+      <a class="site-card reveal" href="https://www.space-labs.in/" target="_blank" rel="noopener">
+        <div class="site-bar"><span></span><span></span><span></span><em>space-labs.in</em></div>
+        <div class="site-shot"><img src="assets/showcase/spacelabs.png" alt="Space Labs website" loading="lazy" /></div>
+        <div class="site-meta">
+          <div><span class="tier-tag">Premium · ₹50,000+</span><h3>Space.Labs</h3></div>
+          <span class="site-visit">Visit →</span>
+        </div>
+      </a>
+
+      <a class="site-card reveal" href="https://juhichoksi.in/" target="_blank" rel="noopener">
+        <div class="site-bar"><span></span><span></span><span></span><em>juhichoksi.in</em></div>
+        <div class="site-shot"><img src="assets/showcase/juhichoksi.png" alt="Juhi Choksi website" loading="lazy" /></div>
+        <div class="site-meta">
+          <div><span class="tier-tag">Pro · ₹20,000–25,000</span><h3>Juhi Choksi</h3></div>
+          <span class="site-visit">Visit →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS — two-row marquee ═══ -->
+<section id="testimonials" class="grid-bg">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="mono-label">Reviews</span>
+      <div class="wipe-heading"><h2>What Clients Say</h2><span class="wipe-overlay"></span></div>
+      <p>Real quotes from people we've shipped production systems for.</p>
+    </div>
+  </div>
+
+  <!-- Row 1 — slower, scrolls left -->
+  <div class="marquee reveal" id="marqueeRow1">
+    <div class="marquee-track marquee-slow">
+      <!-- set A -->
+      <figure class="t-card">
+        <span class="t-quote-mark">&ldquo;</span>
+        <blockquote>Partnered with Innovgeist to design and deploy a production-ready system that streamlined our internal workflows and execution.</blockquote>
+        <figcaption><img src="assets/testimonials/1.png" alt="Juhi Choksi" /><span><b>Juhi Choksi</b>Founder, Consumer Brand</span></figcaption>
+      </figure>
+      <figure class="t-card">
+        <span class="t-quote-mark">&ldquo;</span>
+        <blockquote>The future isn't something we wait for — it's something we build. Innovgeist gets that. Precision, integrity and bold thinking, all the way through.</blockquote>
+        <figcaption><span class="t-logo"><img src="assets/clients/spacelabs.png" alt="Space.Labs" /></span><span><b>Dhruv Mohan</b>Founder &amp; CEO, Space.Labs</span></figcaption>
+      </figure>
+      <figure class="t-card">
+        <span class="t-quote-mark">&ldquo;</span>
+        <blockquote>Worked with Innovgeist to build structured systems that improved process clarity and operational efficiency across teams.</blockquote>
+        <figcaption><img src="assets/testimonials/2.png" alt="Shreya Gupta" /><span><b>Shreya Gupta</b>Sales Lead, Growth Agency</span></figcaption>
+      </figure>
+      <figure class="t-card">
+        <span class="t-quote-mark">&ldquo;</span>
+        <blockquote>They built a platform that genuinely bridges two nations — jobs, business listings and admin, all in one. Speed and clarity throughout.</blockquote>
+        <figcaption><span class="t-avatar">CJ</span><span><b>Connect India Japan</b>Founder-led initiative</span></figcaption>
+      </figure>
+      <!-- set B (duplicate for seamless loop) -->
+      <figure class="t-card" aria-hidden="true">
+        <span class="t-quote-mark">&ldquo;</span>
+        <blockquote>Partnered with Innovgeist to design and deploy a production-ready system that streamlined our internal workflows and execution.</blockquote>
+        <figcaption><img src="assets/testimonials/1.png" alt="" /><span><b>Juhi Choksi</b>Founder, Consumer Brand</span></figcaption>
+      </figure>
+      <figure class="t-card" aria-hidden="true">
+        <span class="t-quote-mark">&ldquo;</span>
+        <blockquote>The future isn't something we wait for — it's something we build. Innovgeist gets that. Precision, integrity and bold thinking, all the way through.</blockquote>
+        <figcaption><span class="t-logo"><img src="assets/clients/spacelabs.png" alt="Space.Labs" /></span><span><b>Dhruv Mohan</b>Founder &amp; CEO, Space.Labs</span></figcaption>
+      </figure>
+      <figure class="t-card" aria-hidden="true">
+        <span class="t-quote-mark">&ldquo;</span>
+        <blockquote>Worked with Innovgeist to build structured systems that improved process clarity and operational efficiency across teams.</blockquote>
+        <figcaption><img src="assets/testimonials/2.png" alt="" /><span><b>Shreya Gupta</b>Sales Lead, Growth Agency</span></figcaption>
+      </figure>
+      <figure class="t-card" aria-hidden="true">
+        <span class="t-quote-mark">&ldquo;</span>
+        <blockquote>They built a platform that genuinely bridges two nations — jobs, business listings and admin, all in one. Speed and clarity throughout.</blockquote>
+        <figcaption><span class="t-avatar">CJ</span><span><b>Connect India Japan</b>Founder-led initiative</span></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- Row 2 — faster, scrolls right -->
+  <div class="marquee reveal" id="marqueeRow2">
+    <div class="marquee-track marquee-fast marquee-reverse">
+      <!-- set A -->
+      <figure class="t-card">
+        <span class="t-quote-mark">&ldquo;</span>
+        <blockquote>Collaborated with Innovgeist to translate requirements into a reliable system designed to support scale and long-term use.</blockquote>
+        <figcaption><img src="assets/testimonials/3.png" alt="Akshat Gupta" /><span><b>Akshat Gupta</b>Founder, Education Startup</span></figcaption>
+      </figure>
+      <figure class="t-card">
+        <span class="t-quote-mark">&ldquo;</span>
+        <blockquote>Five vendors consolidated into one clean AWS architecture — cloud billing down 40%, without a minute of downtime.</blockquote>
+        <figcaption><span class="t-logo"><img src="assets/clients/kull.png" alt="Kull" /></span><span><b>Kull</b>Cloud &amp; Infrastructure</span></figcaption>
+      </figure>
+      <figure class="t-card">
+        <span class="t-quote-mark">&ldquo;</span>
+        <blockquote>Manual lead research turned into a continuously-scored, prioritized queue. Hours of work became minutes.</blockquote>
+        <figcaption><span class="t-logo"><img src="assets/clients/entrybridge.png" alt="EntryBridge" /></span><span><b>EntryBridge</b>Lead Intelligence</span></figcaption>
+      </figure>
+      <figure class="t-card">
+        <span class="t-quote-mark">&ldquo;</span>
+        <blockquote>Spreadsheets and three SaaS tools replaced by one internal operating platform. Academic ops, finally unified.</blockquote>
+        <figcaption><span class="t-logo"><img src="assets/clients/gradeguru.png" alt="GradeGuru" /></span><span><b>GradeGuru</b>EdTech Platform</span></figcaption>
+      </figure>
+      <!-- set B (duplicate) -->
+      <figure class="t-card" aria-hidden="true">
+        <span class="t-quote-mark">&ldquo;</span>
+        <blockquote>Collaborated with Innovgeist to translate requirements into a reliable system designed to support scale and long-term use.</blockquote>
+        <figcaption><img src="assets/testimonials/3.png" alt="" /><span><b>Akshat Gupta</b>Founder, Education Startup</span></figcaption>
+      </figure>
+      <figure class="t-card" aria-hidden="true">
+        <span class="t-quote-mark">&ldquo;</span>
+        <blockquote>Five vendors consolidated into one clean AWS architecture — cloud billing down 40%, without a minute of downtime.</blockquote>
+        <figcaption><span class="t-logo"><img src="assets/clients/kull.png" alt="Kull" /></span><span><b>Kull</b>Cloud &amp; Infrastructure</span></figcaption>
+      </figure>
+      <figure class="t-card" aria-hidden="true">
+        <span class="t-quote-mark">&ldquo;</span>
+        <blockquote>Manual lead research turned into a continuously-scored, prioritized queue. Hours of work became minutes.</blockquote>
+        <figcaption><span class="t-logo"><img src="assets/clients/entrybridge.png" alt="EntryBridge" /></span><span><b>EntryBridge</b>Lead Intelligence</span></figcaption>
+      </figure>
+      <figure class="t-card" aria-hidden="true">
+        <span class="t-quote-mark">&ldquo;</span>
+        <blockquote>Spreadsheets and three SaaS tools replaced by one internal operating platform. Academic ops, finally unified.</blockquote>
+        <figcaption><span class="t-logo"><img src="assets/clients/gradeguru.png" alt="GradeGuru" /></span><span><b>GradeGuru</b>EdTech Platform</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact" class="grid-bg">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="mono-label">Get In Touch</span>
+      <div class="wipe-heading"><h2>Let's Build Something.</h2><span class="wipe-overlay"></span></div>
+      <p>Whether it's a ₹4,000 starter site or a full custom platform — tell us what you're building and we'll start within 3 days.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-left reveal">
+        <ul class="contact-methods">
+          <li>
+            <a href="mailto:hello@innovgeist.com">
+              <span class="cm-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></span>
+              <span class="cm-text"><b>Email</b>hello@innovgeist.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+919305602733">
+              <span class="cm-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 005 5L14 13l5 2v3a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
+              <span class="cm-text"><b>Phone</b>+91-9305602733</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/919305602733" target="_blank" rel="noopener">
+              <span class="cm-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.8-1.4.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></span>
+              <span class="cm-text"><b>WhatsApp</b>Chat now — fastest reply</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.innovgeist.com" target="_blank" rel="noopener">
+              <span class="cm-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" stroke="currentColor" stroke-width="2"/></svg></span>
+              <span class="cm-text"><b>Website</b>innovgeist.com</span>
+            </a>
+          </li>
+        </ul>
+
+        <a href="https://wa.me/919305602733" target="_blank" rel="noopener" class="btn btn-primary contact-wa">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487 2.982 1.287 2.982.858 3.52.804.54-.053 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          Chat on WhatsApp
+        </a>
+
+        <div class="contact-next">
+          <span class="mono-label">What happens next</span>
+          <ol>
+            <li>We reply within a few hours — usually much faster on WhatsApp.</li>
+            <li>A quick call to scope exactly what you need and confirm the price.</li>
+            <li>We start work within 3 days of you saying go.</li>
+          </ol>
+        </div>
+      </div>
+
+      <form class="form-card reveal" id="leadForm">
+        <div class="form-field">
+          <label for="fName">Your Name</label>
+          <input type="text" id="fName" name="name" required placeholder="Full name" />
+        </div>
+        <div class="form-field">
+          <label for="fPhone">Phone / WhatsApp</label>
+          <input type="tel" id="fPhone" name="phone" required placeholder="+91 XXXXX XXXXX" />
+        </div>
+        <div class="form-field">
+          <label for="fBusiness">Business Name</label>
+          <input type="text" id="fBusiness" name="business" required placeholder="Your business" />
+        </div>
+        <div class="form-field">
+          <label for="fPackage">What do you need?</label>
+          <select id="fPackage" name="package">
+            <option value="Starter ₹4,000">Website — Starter (₹4,000)</option>
+            <option value="Growth ₹8,000–12,000">Website — Growth (₹8,000–12,000)</option>
+            <option value="Pro ₹20,000–25,000">Website — Pro (₹20,000–25,000)</option>
+            <option value="Shopify / E-commerce">Shopify / E-commerce build</option>
+            <option value="Custom App / AI / Automation">Custom app, AI or automation</option>
+            <option value="Not sure yet">Not sure yet</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="fMessage">Message (optional)</label>
+          <textarea id="fMessage" name="message" placeholder="Tell us a bit about your business"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center" id="formSubmitBtn">Send Enquiry</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-row">
+      <a href="#home" class="brand"><img src="assets/logo.png" alt="Innovgeist" />INNOVGEIST</a>
+      <div class="footer-links">
+        <a href="#about">Company</a>
+        <a href="#process">How We Work</a>
+        <a href="#work">Work</a>
+        <a href="#packages">Packages</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.innovgeist.com" target="_blank" rel="noopener">Main Site</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 Innovgeist Technologies Private Limited. All rights reserved. · Custom Websites &amp; Applications · AI Solutions · Shopify Partners</p>
+  </div>
+</footer>
+
+<!-- ═══ FLOATING WHATSAPP ═══ -->
+<a href="https://wa.me/919305602733" target="_blank" rel="noopener" class="whatsapp-float" id="waFloat" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#0C0A09"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
