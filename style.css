@@ -1609,7 +1609,7 @@ body.diwali-on .mobile-menu { padding-top: 136px; }
 }
 .spin-coupon-icon { width: 20px; height: 20px; color: var(--ember); flex-shrink: 0; }
 .spin-coupon-label { font-size: 0.8rem; color: var(--stone-400); }
-.spin-coupon strong { font-family: var(--font-mono); font-size: 1rem; letter-spacing: 0.06em; color: var(--fg); margin-right: auto; }
+.spin-coupon strong { font-family: var(--font-mono); font-size: 1rem; letter-spacing: 0.06em; color: var(--fg); margin-right: auto; white-space: nowrap; }
 .spin-copy {
   display: inline-flex;
   align-items: center;
@@ -1625,7 +1625,7 @@ body.diwali-on .mobile-menu { padding-top: 136px; }
   cursor: pointer;
 }
 .spin-copy-icon { width: 14px; height: 14px; }
-@media (max-width: 420px) { .spin-coupon-label { display: none; } }
+@media (max-width: 480px) { .spin-coupon-label { display: none; } }
 .spin-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .spin-actions .btn { justify-content: center; }
 @media (max-width: 420px) { .spin-actions { grid-template-columns: 1fr; } }
